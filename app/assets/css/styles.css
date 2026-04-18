@@ -96,3 +96,36 @@ ul {
 h1 {
     color: var(--primary);
 }
+
+#porte {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-left: 50px;
+}
+
+#detector {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(217, 215, 215);
+}
+
+@keyframes slideLeftBack {
+  0%   { margin-left: 50px; }
+  50%  { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
+
+@keyframes blinkColor {
+  0%   { background-color: rgb(217, 215, 215);  }
+  50%  { background-color: red; }
+  100% { background-color: rgb(217, 215, 215);  }
+}
+
+.animatePorte {
+  animation: slideLeftBack 1s ease;
+}
+
+.animateDetector {
+  animation: blinkColor 1s ease;
+}
