@@ -5,19 +5,8 @@ export default defineNuxtConfig({
   modules: [
     '@primevue/nuxt-module'
   ],
-  primevue: {
-    options: {
-      theme: {
-        preset: Aura
-      }
-    }
-  },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
+  
   css: ['~/assets/css/styles.css']
 })
