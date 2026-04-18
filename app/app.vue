@@ -1,11 +1,18 @@
 <template>
-  <div>
+  <header>
+    <nav>
+      <ul>
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/dashboard">Dashboard</NuxtLink></li>
+        <li><NuxtLink to="/settings">Settings</NuxtLink></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <NuxtRouteAnnouncer />
-        <h1>Dashboard</h1>
-        <LineChart />
-  </div>
+    <NuxtPage />
+  </main>
+
+  <footer>Helmo - Hackaton 2026</footer>
 </template>
 
-<script setup>
-import LineChart from '~/components/LineChart.vue'
-</script>
