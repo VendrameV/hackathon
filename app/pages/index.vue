@@ -4,8 +4,8 @@
   <div :key="triggerPorte" id="porte" :class="{ animatePorte: triggerPorte }">porte</div>
   <div :key="triggerRoue" id="roue" :class="{ animateRoue: triggerRoue }">roue</div>
   <div :key="triggerDetector" id="detector" :class="{ animateDetector: triggerDetector }">detector</div>
-  <!-- <div id="pressure" :class="{ animate: trigger }"></div>
-  <div id="piston" :class="{ animate: trigger }"></div> -->
+  <!-- <div id="pressure" :class="{ animate: trigger }"></div> -->
+  <div :key="triggerPiston" id="piston" :class="{ animatePiston: triggerPiston }">piston</div>
 </template>
 
 <script setup>
@@ -17,6 +17,7 @@ import { ref } from 'vue'
 const triggerPorte = ref(false)
 const triggerDetector = ref(false)
 const triggerRoue = ref(false)
+const triggerPiston = ref(false)
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -56,11 +57,23 @@ async function animateRoue(nbOpen = 1) {
   }
 }
 
+async function animatePiston(nbOpen = 1) {
+  console.log("piston : ouvert")
+  for (let i = 0; i < nbOpen; i++) {
+    triggerPiston.value = true
+    // console.log("door opened " + i);
+    await sleep(3000)
+    triggerPiston.value = false
+    await sleep(50)
+  }
+}
+
 onMounted(() => {
   const seen = new Set()
   let porteCounter = ref(0)
   let detectorCounter = ref(0)
   let roueCounter = ref(0)
+  let pistonCurrent = ref(false)
 
   const client = mqtt.connect('wss://hackathon.finemeca.com/mqtt')
 
@@ -103,10 +116,17 @@ onMounted(() => {
     else if (capteur === "Lab_1") {
       console.log("Lab_1 triggered")
       const compteurRoue = evt.object.Count1_times
+      const pistonStatus = evt.object.DI2_status
 
       if(roueCounter.value > 0) {
-      animateRoue(compteurRoue - roueCounter.value)
+        animateRoue(compteurRoue - roueCounter.value)
       }
+
+      if(pistonStatus) {
+        animatePiston()
+      }
+
+      pistonCurrent = false;
 
       roueCounter.value = compteurRoue
     }
