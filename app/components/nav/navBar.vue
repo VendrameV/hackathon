@@ -2,6 +2,9 @@
 <template>
   <div class="card">
     <Menubar :model="items">
+      <template #start>
+        <img src="../../resources/LogoSanglier.png" alt="Logo" height="40" class="mr-2" />
+      </template>
       <template #item="{ item, props, hasSubmenu }">
         <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
           <a v-ripple :href="href" v-bind="props.action" @click="navigate">
