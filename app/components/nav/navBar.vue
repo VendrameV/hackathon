@@ -44,7 +44,7 @@ const items = ref([
         route: '/wheel'
       },
       {
-        label: 'door',
+        label: 'Door',
         route: '/door'
       },
       {
