@@ -27,37 +27,36 @@ const router = useRouter();
 
 const items = ref([
   {
-    label: 'Router',
-    icon: 'pi pi-palette',
+    label: 'Home',
+    icon: 'pi pi-home',
+    command: () => {
+      router.push('/');}
+  },
+  {
+    label: 'Counter',
+    icon: 'pi pi-chart-line',
     items: [
       {
-        label: 'counting',
-        route: '/counting'
+        label: 'Wheel',
+        route: '/wheel'
       },
       {
-        label: 'Unstyled',
-        route: '/theming/unstyled'
+        label: 'door',
+        route: '/door'
+      },
+      {
+        label: 'Motion Detector',
+        route: '/motionDetector'
       }
     ]
   },
   {
-    label: 'Programmatic',
-    icon: 'pi pi-link',
-    command: () => {
-      router.push('/introduction');
-    }
-  },
-  {
-    label: 'External',
-    icon: 'pi pi-home',
+    label: 'Pressure Sensor',
+    icon: 'pi pi-chart-bar',
     items: [
       {
-        label: 'Vue.js',
-        url: 'https://vuejs.org/'
-      },
-      {
-        label: 'Vite.js',
-        url: 'https://vitejs.dev/'
+        label: 'Bar Pressure Sensor',
+        route: '/BarPressure'
       }
     ]
   }
