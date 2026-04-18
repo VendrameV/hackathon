@@ -1,7 +1,3 @@
-<template>
-  <Line :data="data" />
-</template>
-
 <script setup>
 import { Line } from 'vue-chartjs'
 import {
@@ -25,3 +21,7 @@ const data = {
   ]
 }
 </script>
+
+<template>
+  <Line :data="data" />
+</template>
