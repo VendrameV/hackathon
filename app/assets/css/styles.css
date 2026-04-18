@@ -1,8 +1,10 @@
+@import "primeicons/primeicons.css";
 :root {
     --primary:  #3C62C9;
     --secondary: #ffffff;
     --bg: #cfc1da;
     --textSize: 1.2em;
+
 }
 
 html {
@@ -11,6 +13,7 @@ html {
 
 body {
     margin: 0;
+
 }
 
 h1 {
