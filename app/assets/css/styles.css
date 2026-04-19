@@ -1,162 +1,185 @@
 @import "primeicons/primeicons.css";
-:root {
-    --primary:  #3C62C9;
-    --secondary: #ffffff;
-    --bg: #cfc1da;
-    --textSize: 1.2em;
 
+:root {
+	--primary: #3c62c9;
+	--secondary: #ffffff;
+	--bg: #cfc1da;
+	--textSize: 1.2em;
+}
+
+/* ===== Layout ===== */
+
+html,
+body {
+	margin: 0;
 }
 
 html {
-    margin: 0;
-}
-
-body {
-    margin: 0;
-
+  color-scheme: light !important;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
+	color: var(--primary);
 }
 
-nav, #leftNav, footer {
-    background-color: var(--bg);
-    /* border: 1px solid gray; */
-    padding: 20px;
+nav,
+#leftNav,
+footer {
+	background-color: var(--bg);
+	padding: 20px;
 }
 
 #leftNav {
-    min-width: 100px;
+	min-width: 100px;
 }
 
 #leftNav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
 }
 
 #leftNav li {
-    margin-bottom: 3px;
+	margin-bottom: 3px;
 }
 
 footer {
-    text-align: center;
+	text-align: center;
 }
 
 nav ul {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
 }
 
 main {
-    display: flex;
+	display: flex;
 }
 
 canvas {
-    width : 500px !important;
-}
-
-main {
-
+	width: 500px !important;
 }
 
 #page {
-    padding: 20px;
+	padding: 20px;
 }
 
 #filters {
-    padding: 10px;
-    margin-bottom: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
 }
 
 #filters ul {
-    display: flex;
-    gap: 10px;
+	display: flex;
+	gap: 10px;
 }
 
-
-
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
-    font-size: var(--textSize);
+	text-decoration: none;
+	font-size: var(--textSize);
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
+/* ===== SVG Elements ===== */
 
-h1 {
-    color: var(--primary);
-}
-
-#porte {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    margin-left: 50px;
-}
-
+/* Detector (laser line) */
 #detector {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(217, 215, 215);
+	stroke-width: 3;
+	fill: #ddd;
 }
 
+/* Wheel */
 #roue {
-    width: 50px;
-    height: 50px;
-    background-color: aquamarine;
+	transform-box: fill-box;
+	transform-origin: center;
+	transform: translate(-197.83193px, 22.010156px);
 }
 
+/* Piston */
 #piston {
-    width: 50px;
-    height: 50px;
-    background-color: khaki;
+	transform-box: fill-box;
+	transform: translate(-203.12362px, 22.010156px);
 }
 
+/* Door */
+#porte {
+	transform-box: fill-box;
+	transform-origin: left center;
+}
+
+/* ===== Animations ===== */
+
+/* Door open/close */
 @keyframes slideLeftBack {
-  0%   { margin-left: 50px; }
-  50%  { margin-left: 0px; }
-  100% { margin-left: 50px; }
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(-90deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
 }
 
+/* Detector blink */
 @keyframes blinkColor {
-  0%   { background-color: rgb(217, 215, 215);  }
-  50%  { background-color: red; }
-  100% { background-color: rgb(217, 215, 215);  }
+	0%,
+	100% {
+		fill: #ccc;
+	}
+	50% {
+		fill: #ff0000;
+	}
 }
 
+/* Wheel spin (IMPORTANT: includes base translate) */
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+	from {
+		transform: translate(-197.83193px, 22.010156px) rotate(0deg);
+	}
+	to {
+		transform: translate(-197.83193px, 22.010156px) rotate(360deg);
+	}
 }
 
+/* Piston movement (IMPORTANT: includes base translate) */
 @keyframes openClose {
-  0%   { margin-left: 0px; }
-  50%  { margin-left: 50px; }
-  100% { margin-left: 0px; }
+	0% {
+		transform: translate(-203.12362px, 22.010156px) translateX(0px);
+	}
+	50% {
+		transform: translate(-203.12362px, 22.010156px) translateX(50%);
+	}
+	100% {
+		transform: translate(-203.12362px, 22.010156px) translateX(0px);
+	}
 }
+
+/* ===== Animation Classes ===== */
 
 .animatePorte {
-  animation: slideLeftBack 1s ease;
+	animation: slideLeftBack 2s linear;
 }
 
 .animateDetector {
-  animation: blinkColor 1s ease;
+	animation: blinkColor 2s linear;
 }
 
 .animateRoue {
-  animation: spin 1s ease;
+	animation: spin 2s linear;
 }
 
-.animatePiston{
-  animation: openClose 3s ease;
+.animatePiston {
+	animation: openClose 2s linear;
 }
