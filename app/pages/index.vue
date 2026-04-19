@@ -77,10 +77,10 @@ async function animatePiston(nbOpen = 1) {
 
 
 function triggerElement(event:any) {
-  animateDetector(5);
-  animatePiston(5);
-  animateRoue(5);
-  animatePorte(5);
+  animateDetector(1);
+  animatePiston(1);
+  animateRoue(1);
+  animatePorte(1);
 }
 
 triggerElement("")
@@ -146,7 +146,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>Simulator</h1>
   <BoardBed ref="boardRef" >
     <ListeningBoardSVG></ListeningBoardSVG>
     <div class="bg-red-500 text-white p-4">
