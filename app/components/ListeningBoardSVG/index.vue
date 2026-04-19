@@ -2,8 +2,6 @@
 <template>
   <div>
     <svg
-      width="195.57954mm"
-      height="133.29309mm"
       viewBox="0 0 195.57954 133.29309"
       version="1.1"
       id="svg1"

@@ -191,3 +191,11 @@ ul {
 .animatePiston {
 	animation: openClose 2s linear;
 }
+
+#svg1{
+    height: 90vh;
+}
+
+.justify-center{
+    justify-content: center;
+}

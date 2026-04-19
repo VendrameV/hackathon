@@ -77,7 +77,6 @@ async function animatePiston(nbOpen = 1) {
 
 
 function triggerElement(event:any) {
-  
   animateDetector(5);
   animatePiston(5);
   animateRoue(5);

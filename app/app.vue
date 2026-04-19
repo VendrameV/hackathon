@@ -9,7 +9,7 @@
       </ul>
     </nav> -->
   </header>
-  <main>
+  <main class="justify-center">
     <NuxtRouteAnnouncer />
     <!-- <div id="leftNav">
       <h2>Capteurs</h2>
