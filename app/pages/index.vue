@@ -151,7 +151,7 @@ onMounted(() => {
   <BoardBed ref="boardRef" >
     <ListeningBoardSVG></ListeningBoardSVG>
     <div class="bg-red-500 text-white p-4">
-  Tailwind works
+  
 </div>
   </BoardBed>
 </template>
