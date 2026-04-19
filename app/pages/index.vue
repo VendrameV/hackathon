@@ -21,9 +21,7 @@ function sleep(ms:number) {
 }
 const trigger = (switchi:any,id:string) => {
   watch(switchi, (val) => {
-  if (val) {
-    boardRef.value?.animateById(id)
-  }
+  boardRef.value?.animateById(id,val);
 })
 }
 
@@ -37,7 +35,7 @@ async function animatePorte(nbOpen = 1) {
   for (let i = 0; i < nbOpen; i++) {
     triggerPorte.value = true;
     // console.log("door opened " + i);
-    await sleep(3000);
+    await sleep(2000);
     triggerPorte.value = false;
     await sleep(50);
   }
@@ -48,7 +46,7 @@ async function animateDetector(nbOpen = 1) {
   for (let i = 0; i < nbOpen; i++) {
     triggerDetector.value = true;
     // console.log("door opened " + i);
-    await sleep(3000);
+    await sleep(2000);
     triggerDetector.value = false;
     await sleep(50);
   }
@@ -59,7 +57,7 @@ async function animateRoue(nbOpen = 1) {
   for (let i = 0; i < nbOpen; i++) {
     triggerRoue.value = true;
     // console.log("door opened " + i);
-    await sleep(1000);
+    await sleep(2000);
     triggerRoue.value = false;
     await sleep(50);
   }
@@ -70,7 +68,7 @@ async function animatePiston(nbOpen = 1) {
   for (let i = 0; i < nbOpen; i++) {
     triggerPiston.value = true;
     // console.log("door opened " + i);
-    await sleep(5000);
+    await sleep(2000);
     triggerPiston.value = false;
     await sleep(50);
   }

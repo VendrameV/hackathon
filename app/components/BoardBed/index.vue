@@ -1,21 +1,27 @@
 <script lang="ts" setup>
-import { nextTick } from 'vue'
+import { nextTick } from "vue";
 
-const animateById = (id:string) => {
+const animateById = (id: string, shouldAnimate: boolean) => {
   nextTick(() => {
-    const el = document.getElementById(id)
-    if (!el) return
+    const el = document.getElementById(id);
+    if (!el) return;
 
-    const className = `animate${id.charAt(0).toUpperCase() + id.slice(1)}`
+    const className = `animate${id.charAt(0).toUpperCase() + id.slice(1)}`;
 
     // reset animation
-    el.classList.remove(className)
-    void el.offsetWidth
-    el.classList.add(className)
-  })
-}
+    if (shouldAnimate) {
+      el.classList.add(className);
+      console.log("add"+className)
+    } 
+    void el.offsetWidth;
+    if (!shouldAnimate){
+      el.classList.remove(className);
+      console.log("remove"+className)
+    }
+  });
+};
 
-defineExpose({ animateById })
+defineExpose({ animateById });
 </script>
 
 <template>
