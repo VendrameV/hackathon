@@ -1,14 +1,15 @@
 <script lang="ts" setup>
 import { onMounted } from "vue";
 import mqtt from "mqtt";
-import { ref, watch } from 'vue'
+import { ref, watch } from "vue";
 
 const triggerPorte = ref(false);
 const triggerDetector = ref(false);
 const triggerRoue = ref(false);
 const triggerPiston = ref(false);
+const triggerLampe = ref(false);
+const triggerPressorLampe = ref(false);
 const boardRef = ref();
-
 
 const seen = new Set();
 const porteCounter = ref(0);
@@ -16,19 +17,21 @@ const detectorCounter = ref(0);
 const roueCounter = ref(0);
 const pistonCurrent = ref(false);
 
-function sleep(ms:number) {
+function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-const trigger = (switchi:any,id:string) => {
+const trigger = (switchi: any, id: string) => {
   watch(switchi, (val) => {
-  boardRef.value?.animateById(id,val);
-})
-}
+    boardRef.value?.animateById(id, val);
+  });
+};
 
-trigger(triggerPorte,'porte');
-trigger(triggerDetector,'detector');
-trigger(triggerRoue,'roue');
-trigger(triggerPiston,'piston');
+trigger(triggerPorte, "porte");
+trigger(triggerDetector, "detector");
+trigger(triggerRoue, "roue");
+trigger(triggerPiston, "piston");
+trigger(triggerPressorLampe, "gPressor");
+trigger(triggerLampe, "gLampe");
 
 async function animatePorte(nbOpen = 1) {
   console.log("porte : " + nbOpen);
@@ -52,6 +55,14 @@ async function animateDetector(nbOpen = 1) {
   }
 }
 
+const toggleLampe = async () => {
+  triggerLampe.value = !triggerLampe.value;
+};
+
+const togglePressorLampe = async () => {
+  triggerPressorLampe.value = !triggerPressorLampe.value;
+};
+
 async function animateRoue(nbOpen = 1) {
   console.log("roue : " + nbOpen);
   for (let i = 0; i < nbOpen; i++) {
@@ -74,16 +85,32 @@ async function animatePiston(nbOpen = 1) {
   }
 }
 
+onMounted(() => {
+  setInterval(() => {
+    const randAnim = Math.floor(Math.random() * 6); // 0–3
+    const randState = Math.floor(Math.random() * 2) + 1; // 1 or 2
 
-
-function triggerElement(event:any) {
-  animateDetector(1);
-  animatePiston(1);
-  animateRoue(1);
-  animatePorte(1);
-}
-
-triggerElement("")
+    switch (randAnim) {
+      case 0:
+        animateDetector(randState);
+        break;
+      case 1:
+        animatePiston(randState);
+        break;
+      case 2:
+        animateRoue(randState);
+        break;
+      case 3:
+        animatePorte(randState);
+        break;
+      case 4:
+        toggleLampe();
+        break;
+      case 5:
+        togglePressorLampe();
+    }
+  }, 1000);
+});
 
 onMounted(() => {
   const client = mqtt.connect("wss://hackathon.finemeca.com/mqtt");
@@ -142,14 +169,11 @@ onMounted(() => {
     }
   });
 });
-
 </script>
 
 <template>
-  <BoardBed ref="boardRef" >
+  <BoardBed ref="boardRef">
     <ListeningBoardSVG></ListeningBoardSVG>
-    <div class="bg-red-500 text-white p-4">
-  
-</div>
+    <div class="bg-red-500 text-white p-4"></div>
   </BoardBed>
 </template>

@@ -40,6 +40,24 @@ footer {
 	padding: 0;
 }
 
+#glowLampPressor {
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+#lampePressor {
+	transition: all 0.5s ease;
+}
+
+#lampe{
+	transition: all 0.5s ease;
+		fill:#192ea9 !important;
+	}
+#lampeGlow {
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
 #leftNav li {
 	margin-bottom: 3px;
 }
@@ -192,10 +210,28 @@ ul {
 	animation: openClose 2s linear;
 }
 
-#svg1{
-    height: 90vh;
+.animateGLampe {
+	#lampeGlow {
+		opacity: 1;
+	}
+	#lampe{
+		fill: #5599ff !important;
+	}
 }
 
-.justify-center{
-    justify-content: center;
+.animateGPressor {
+	#glowLampPressor {
+		opacity: 1;
+	}
+	#lampePressor{
+		fill: #ff0000 !important;
+	}
+}
+
+#svg1 {
+	height: 90vh;
+}
+
+.justify-center {
+	justify-content: center;
 }

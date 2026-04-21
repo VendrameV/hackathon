@@ -2,6 +2,8 @@
 <template>
   <div>
     <svg
+      width="195.57954mm"
+      height="133.29309mm"
       viewBox="0 0 195.57954 133.29309"
       version="1.1"
       id="svg1"
@@ -23,17 +25,31 @@
         inkscape:pagecheckerboard="0"
         inkscape:deskcolor="#d1d1d1"
         inkscape:document-units="mm"
-        inkscape:zoom="2.3475422"
-        inkscape:cx="406.38247"
-        inkscape:cy="292.43351"
+        inkscape:zoom="1.2248094"
+        inkscape:cx="299.63846"
+        inkscape:cy="271.47081"
         inkscape:window-width="1920"
-        inkscape:window-height="1052"
+        inkscape:window-height="1024"
         inkscape:window-x="1080"
-        inkscape:window-y="28"
+        inkscape:window-y="707"
         inkscape:window-maximized="0"
-        inkscape:current-layer="g14"
+        inkscape:current-layer="layer1"
+        showgrid="false"
       />
       <defs id="defs1">
+        <linearGradient id="linearGradient6" inkscape:collect="always">
+          <stop style="stop-color: #d5e5ff; stop-opacity: 1" offset="0" id="stop6" />
+          <stop
+            style="stop-color: #d5e5ff; stop-opacity: 0.44313725"
+            offset="0.75581425"
+            id="stop8"
+          />
+          <stop style="stop-color: #d5e5ff; stop-opacity: 0" offset="1" id="stop7" />
+        </linearGradient>
+        <linearGradient id="linearGradient2" inkscape:collect="always">
+          <stop style="stop-color: #ffd5d5; stop-opacity: 1" offset="0" id="stop2" />
+          <stop style="stop-color: #ffd5d5; stop-opacity: 0" offset="1" id="stop3" />
+        </linearGradient>
         <linearGradient
           inkscape:collect="always"
           xlink:href="#linearGradient25"
@@ -49,6 +65,30 @@
           <stop style="stop-color: #f9f9f9; stop-opacity: 1" offset="0" id="stop25" />
           <stop style="stop-color: #f9f9f9; stop-opacity: 0" offset="1" id="stop26" />
         </linearGradient>
+        <radialGradient
+          inkscape:collect="always"
+          xlink:href="#linearGradient6"
+          id="radialGradient7"
+          cx="-130.41605"
+          cy="63.165306"
+          fx="-130.41605"
+          fy="63.165306"
+          r="13.726912"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="matrix(-0.24096432,0.89929116,-1.0633046,-0.28491064,-91.043885,207.84829)"
+        />
+        <radialGradient
+          inkscape:collect="always"
+          xlink:href="#linearGradient2"
+          id="radialGradient8"
+          cx="-123.28652"
+          cy="95.580864"
+          fx="-123.28652"
+          fy="95.580864"
+          r="7.4067798"
+          gradientTransform="matrix(1.238672,-0.02343875,0.02573382,1.3599603,26.963366,-37.966493)"
+          gradientUnits="userSpaceOnUse"
+        />
       </defs>
       <g
         inkscape:label="Layer 1"
@@ -143,85 +183,68 @@
             </tspan>
           </text>
         </g>
-        <g>
-          <rect
+        <g id="roue" transform="translate(-197.83193,22.010156)">
+          <circle
             style="
-              fill: none;
-              stroke-width: 0.79375;
+              fill: #ffffff;
+              fill-opacity: 1;
+              stroke: #000000;
+              stroke-width: 0.264999;
               stroke-linecap: round;
               stroke-linejoin: round;
+              stroke-opacity: 0.956863;
               paint-order: fill markers stroke;
             "
-            id="rect14"
-            width="31.44512"
-            height="31.44512"
-            x="-147.96632"
-            y="127.17365"
-            ry="1.3389859"
+            id="path3"
+            cx="65.588173"
+            cy="120.88605"
+            r="14.655637"
           />
-          <g id="roue">
-            <circle
-              style="
-                fill: #ffffff;
-                fill-opacity: 1;
-                stroke: #000000;
-                stroke-width: 0.264999;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-opacity: 0.956863;
-                paint-order: fill markers stroke;
-              "
-              id="path3"
-              cx="65.588173"
-              cy="120.88605"
-              r="14.655637"
-            />
-            <ellipse
-              style="
-                fill: #f2f2f2;
-                fill-opacity: 1;
-                stroke: #f9f9f9;
-                stroke-width: 0.199955;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-opacity: 0.956863;
-                paint-order: fill markers stroke;
-              "
-              id="path27"
-              cx="65.70919"
-              cy="121.11412"
-              rx="12.920202"
-              ry="12.355997"
-            />
-            <path
-              sodipodi:type="star"
-              style="
-                fill: #1a1a1a;
-                fill-opacity: 1;
-                stroke: none;
-                stroke-width: 0.264999;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-opacity: 0.956863;
-                paint-order: fill markers stroke;
-              "
-              id="path4"
-              inkscape:flatsided="false"
-              sodipodi:sides="3"
-              sodipodi:cx="75.25106"
-              sodipodi:cy="113.86302"
-              sodipodi:r1="2.5984287"
-              sodipodi:r2="2.5096977"
-              sodipodi:arg1="1.3089969"
-              sodipodi:arg2="2.3561945"
-              inkscape:rounded="0"
-              inkscape:randomized="0"
-              d="m 75.923583,116.37291 -2.447147,-0.73526 -0.735265,-2.44715 1.860332,-1.75166 2.486924,0.58682 0.586815,2.48692 z"
-              inkscape:transform-center-x="0.042853866"
-              inkscape:transform-center-y="0.042853866"
-              transform="translate(-14.84531,-3.26696)"
-            />
-          </g>
+          <ellipse
+            style="
+              fill: #f2f2f2;
+              fill-opacity: 1;
+              stroke: #f9f9f9;
+              stroke-width: 0.199955;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="path27"
+            cx="65.70919"
+            cy="121.11412"
+            rx="12.920202"
+            ry="12.355997"
+          />
+          <path
+            sodipodi:type="star"
+            style="
+              fill: #1a1a1a;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="path4"
+            inkscape:flatsided="false"
+            sodipodi:sides="3"
+            sodipodi:cx="75.25106"
+            sodipodi:cy="113.86302"
+            sodipodi:r1="2.5984287"
+            sodipodi:r2="2.5096977"
+            sodipodi:arg1="1.3089969"
+            sodipodi:arg2="2.3561945"
+            inkscape:rounded="0"
+            inkscape:randomized="0"
+            d="m 75.923583,116.37291 -2.447147,-0.73526 -0.735265,-2.44715 1.860332,-1.75166 2.486924,0.58682 0.586815,2.48692 z"
+            inkscape:transform-center-x="0.042853866"
+            inkscape:transform-center-y="0.042853866"
+            transform="translate(-14.84531,-3.26696)"
+          />
         </g>
         <rect
           style="
@@ -420,84 +443,87 @@
           cy="55.224663"
           r="1.5449837"
         />
-        <path
-          id="rect12"
-          style="
-            fill: #999999;
-            fill-opacity: 1;
-            stroke: none;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          d="m -133.84411,94.258975 c -0.76336,0 -1.40223,0.51506 -1.58905,1.21801 h -11.16573 c -0.74179,0 -1.33893,0.59714 -1.33893,1.33894 0,0.7418 0.59714,1.33894 1.33893,1.33894 h 11.33006 c 0.0111,0 0.022,-2.5e-4 0.0331,-5.2e-4 0.29069,0.46077 0.80433,0.76584 1.39165,0.76584 h 13.89992 c 0.91086,0 1.64383,-0.73348 1.64383,-1.64434 v -1.37304 c 0,-0.91086 -0.73297,-1.64383 -1.64383,-1.64383 z"
-        />
-        <circle
-          style="
-            fill: #1a1a1a;
-            fill-opacity: 1;
-            stroke: none;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="path13"
-          cx="-126.74865"
-          cy="72.409378"
-          r="6.1178236"
-        />
-        <circle
-          style="
-            fill: #2727c8;
-            fill-opacity: 1;
-            stroke: none;
-            stroke-width: 0.233769;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="lampe"
-          cx="-126.74865"
-          cy="72.409378"
-          r="5.396831"
-        />
-        <circle
-          style="
-            fill: #3535ed;
-            fill-opacity: 1;
-            stroke: none;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="path14"
-          cx="-124.67524"
-          cy="71.539955"
-          r="2.6947556"
-        />
-        <circle
-          style="
-            fill: #f9f9f9;
-            fill-opacity: 1;
-            stroke: none;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="path15"
-          cx="-126.05447"
-          cy="69.476761"
-          r="0.80114353"
-        />
+        <g id="gLampe">
+          <circle
+            style="
+              fill: url(#radialGradient7);
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 2.59184;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              paint-order: fill markers stroke;
+            "
+            id="lampeGlow"
+            cx="-127.12541"
+            cy="72.627029"
+            r="13.726912"
+          />
+          <circle
+            style="
+              fill: #1a1a1a;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="path13"
+            cx="-126.74865"
+            cy="72.409378"
+            r="6.1178236"
+          />
+          <circle
+            style="
+              fill: #5599ff;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.233769;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="lampe"
+            cx="-126.74865"
+            cy="72.409378"
+            r="5.396831"
+          />
+          <circle
+            style="
+              fill: #3535ed;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="path14"
+            cx="-124.67524"
+            cy="71.539955"
+            r="2.6947556"
+          />
+          <circle
+            style="
+              fill: #f9f9f9;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="path15"
+            cx="-126.05447"
+            cy="69.476761"
+            r="0.80114353"
+          />
+        </g>
         <rect
           style="
             fill: #1a1a1a;
@@ -715,28 +741,52 @@
             />
           </g>
         </g>
-        <rect
-          style="
-            fill: #b3b3b3;
-            fill-opacity: 1;
-            stroke: #f9f9f9;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="pressor"
-          width="15.877208"
-          height="3.6415617"
-          x="-134.68726"
-          y="94.622902"
-          ry="0.4369874"
-        />
-        <g id="piston" style="fill: #b3b3b3">
+        <g id="gPiston">
+          <g
+            id="piston"
+            transform="translate(-203.12362,22.010156)"
+            style="fill: #b3b3b3"
+          >
+            <rect
+              style="
+                fill: #b3b3b3;
+                fill-opacity: 1;
+                stroke: #808080;
+                stroke-width: 0.264999;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-opacity: 0.956863;
+                paint-order: fill markers stroke;
+              "
+              id="rect31"
+              width="9.7848969"
+              height="3.3989644"
+              x="37.800602"
+              y="48.718491"
+              ry="0.4369874"
+            />
+            <rect
+              style="
+                fill: #b3b3b3;
+                fill-opacity: 1;
+                stroke: #808080;
+                stroke-width: 0.264999;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-opacity: 0.956863;
+                paint-order: fill markers stroke;
+              "
+              id="rect30"
+              width="3.7079611"
+              height="9.6818981"
+              x="45.614346"
+              y="45.731518"
+              ry="0.4369874"
+            />
+          </g>
           <rect
             style="
-              fill: #b3b3b3;
+              fill: #e6e6e6;
               fill-opacity: 1;
               stroke: #808080;
               stroke-width: 0.264999;
@@ -745,50 +795,14 @@
               stroke-opacity: 0.956863;
               paint-order: fill markers stroke;
             "
-            id="rect31"
-            width="9.7848969"
-            height="3.3989644"
-            x="37.800602"
-            y="48.718491"
-            ry="0.4369874"
-          />
-          <rect
-            style="
-              fill: #b3b3b3;
-              fill-opacity: 1;
-              stroke: #808080;
-              stroke-width: 0.264999;
-              stroke-linecap: round;
-              stroke-linejoin: round;
-              stroke-opacity: 0.956863;
-              paint-order: fill markers stroke;
-            "
-            id="rect30"
-            width="3.7079611"
-            height="9.6818981"
-            x="45.614346"
-            y="45.731518"
+            id="rect29"
+            width="10.196373"
+            height="10.196373"
+            x="-167.63544"
+            y="67.486412"
             ry="0.4369874"
           />
         </g>
-        <rect
-          style="
-            fill: #e6e6e6;
-            fill-opacity: 1;
-            stroke: #808080;
-            stroke-width: 0.264999;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 0.956863;
-            paint-order: fill markers stroke;
-          "
-          id="rect29"
-          width="10.196373"
-          height="10.196373"
-          x="-167.63544"
-          y="67.486412"
-          ry="0.4369874"
-        />
         <rect
           style="
             fill: #e6e6e6;
@@ -904,7 +918,7 @@
             />
           </g>
         </g>
-        <g>
+        <g id="gDetector">
           <rect
             style="
               fill: #e6e6e6;
@@ -1004,7 +1018,7 @@
               fill: #e6e6e6;
               fill-opacity: 1;
               stroke: #acacac;
-              stroke-width: 0.2;
+              stroke-width: 0.122768;
               stroke-linecap: round;
               stroke-linejoin: round;
               stroke-dasharray: none;
@@ -1014,18 +1028,139 @@
             d="m -226.07161,71.180945 h -3.17033 c -0.18445,0 -0.3327,0.14864 -0.3327,0.33309 v 1.5706 c 0,0.18445 0.14825,0.33309 0.3327,0.33309 h 3.17033 z"
           />
           <path
+            id="detector"
             style="
               baseline-shift: baseline;
               display: inline;
               overflow: visible;
               vector-effect: none;
+              fill: #cccccc;
               enable-background: accumulate;
               stop-color: #000000;
               stop-opacity: 1;
               opacity: 1;
+              stroke: none;
+              fill-opacity: 1;
             "
             d="m -215.60352,71.867187 v 0.792969 h 18.79102 v -0.792969 z"
-            id="detector"
+          />
+        </g>
+        <g id="gPressor">
+          <path
+            id="glowLampPressor"
+            style="
+              fill: url(#radialGradient8);
+              stroke: none;
+              stroke-width: 2.11667;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              paint-order: fill markers stroke;
+              fill-opacity: 1;
+            "
+            d="M -123.20766 86.468282 A 7.4068131 7.4068131 0 0 0 -130.61444 93.875066 A 7.4068131 7.4068131 0 0 0 -130.60359 94.275558 L -119.58979 94.275558 L -118.84617 94.647111 L -116.51143 97.041281 A 7.4068131 7.4068131 0 0 0 -115.80088 93.875066 A 7.4068131 7.4068131 0 0 0 -123.20766 86.468282 z "
+          />
+          <path
+            id="rect12"
+            style="
+              fill: #999999;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            d="m -133.84411,94.258975 c -0.76336,0 -1.40223,0.51506 -1.58905,1.21801 h -11.16573 c -0.74179,0 -1.33893,0.59714 -1.33893,1.33894 0,0.7418 0.59714,1.33894 1.33893,1.33894 h 11.33006 c 0.0111,0 0.022,-2.5e-4 0.0331,-5.2e-4 0.29069,0.46077 0.80433,0.76584 1.39165,0.76584 h 13.89992 c 0.91086,0 1.64383,-0.73348 1.64383,-1.64434 v -1.37304 c 0,-0.91086 -0.73297,-1.64383 -1.64383,-1.64383 z"
+          />
+          <rect
+            style="
+              fill: #b3b3b3;
+              fill-opacity: 1;
+              stroke: #f9f9f9;
+              stroke-width: 0.264999;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="rec45"
+            width="15.877208"
+            height="3.6415617"
+            x="-134.68726"
+            y="94.622902"
+            ry="0.4369874"
+          />
+          <path
+            id="path25"
+            style="
+              fill: #1a1a1a;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.100297;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            d="m -123.30223,92.083444 a 2.3154755,2.3154755 0 0 0 -2.30115,2.059822 h 4.60282 a 2.3154755,2.3154755 0 0 0 -2.30167,-2.059822 z"
+          />
+          <path
+            id="lampePressor"
+            style="
+              fill: #ffd5d5;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.0884769;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            d="m -123.30223,92.356295 a 2.042594,2.042594 0 0 0 -2.02623,1.786971 h 4.05298 a 2.042594,2.042594 0 0 0 -2.02675,-1.786971 z"
+          />
+          <path
+            id="path24"
+            style="
+              fill: #ffaaaa;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.100297;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            d="m -122.51726,93.049793 a 1.0199118,1.0199118 0 0 0 -1.0201,1.020093 1.0199118,1.0199118 0 0 0 0.003,0.07338 h 2.0345 a 1.0199118,1.0199118 0 0 0 0.003,-0.07338 1.0199118,1.0199118 0 0 0 -1.02009,-1.020093 z"
+          />
+          <circle
+            style="
+              fill: #f9f9f9;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.100297;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-opacity: 0.956863;
+              paint-order: fill markers stroke;
+            "
+            id="circle19"
+            cx="-123.03934"
+            cy="93.288826"
+            r="0.30321702"
+          />
+          <path
+            style="
+              fill: none;
+              stroke: #000000;
+              stroke-width: 0.264583px;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-opacity: 1;
+            "
+            d="m -125.65247,94.143484 h 4.69337"
+            id="path19"
+            sodipodi:nodetypes="cc"
           />
         </g>
       </g>

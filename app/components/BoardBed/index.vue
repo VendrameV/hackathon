@@ -8,6 +8,7 @@ const animateById = (id: string, shouldAnimate: boolean) => {
 
     const className = `animate${id.charAt(0).toUpperCase() + id.slice(1)}`;
 
+    
     // reset animation
     if (shouldAnimate) {
       el.classList.add(className);
